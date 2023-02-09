@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/gas_station_name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="text"
+            android:maxLines="1"/>
+
+        <TextView
+            android:id="@+id/date_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <Button
+            android:id="@+id/date_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change Date"/>
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkedButton="@+id/gasoline_radio_button"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/gasoline_radio_button"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:text="Gasoline" />
+
+            <RadioButton
+                android:id="@+id/diesel_radio_button"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:text="Diesel" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/amount_litres_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Amount of Litres"
+            android:inputType="number"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/price_per_liter_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Price Per Litre"
+            android:inputType="numberDecimal"
+            android:maxLines="1"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
